@@ -7,16 +7,26 @@
         .colortext {
             color: #f52;
         }
+        .header h1 {
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+        }
+
     </style>
-    <linkrel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <title>МойМаркет</title>
     <base target="_blank">
 </head>
 
 <body>
     <header>
+        <div class="header h1">
+        <img src="./favicon.ico" alt="Логотип">
         <h1><span class="colortext">Мой</span>Маркет</h1>
         <p><a id="top"></a></p>
+        </div>
+
     </header>
     <main>
         <nav><a href="file:///E:/Документы/Жена/иннополис/Домашка/homework1/index.html">Электроника</a> >
@@ -56,6 +66,8 @@
             <li>Процессор: <a href="https://ru.wikipedia.org/wiki/Apple_A15"><b><u>Apple A15 Bionic</u></b></a></li>
             <li>Вес: <b>173 г</b></li>
         </ul>
+
+        <iframe class="iframe blurb" src="./ads.html" width="200" height="300"></iframe>
         
         <h3>Описание</h3>
         Наша самая совершенная система двух камер.
@@ -77,6 +89,59 @@
             Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другогочеловека или объект, который появился в
             кадре.
             Теперь ваши видео будут смотреться как настоящее кино.</p>
+
+            <h3>Сравнение моделей</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Модель</th>
+                        <th>Вес</th>
+                        <th>Высота</th>
+                        <th>Ширина</th>
+                        <th>Толщина</th>
+                        <th>Чип</th>
+                        <th>Объём памяти</th>
+                        <th>Беспроводная зарядка</th>
+                        <th>Аккумулятор</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Iphone 11</td>
+                        <td>194 грамма</td>
+                        <td>150.9 мм</td>
+                        <td>75.7 мм</td>
+                        <td>8.3 мм</td>
+                        <td>A13 Bionik chip</td>
+                        <td>до 128 Гб</td>
+                        <td>Нет</td>
+                        <td>До 17 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 12</td>
+                        <td>164 грамма</td>
+                        <td>146.7 мм</td>
+                        <td>71.5 мм</td>
+                        <td>7.4 мм</td>
+                        <td>A14 Bionik chip</td>
+                        <td>до 256 Гб</td>
+                        <td>Да</td>
+                        <td>До 19 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 13</td>
+                        <td>174 грамма</td>
+                        <td>146.7 мм</td>
+                        <td>71.5 мм</td>
+                        <td>7.65 мм</td>
+                        <td>A15 Bionik chip</td>
+                        <td>до 512 Гб</td>
+                        <td>Да</td>
+                        <td>До 19 часов</td>
+                    </tr>
+                </tbody>
+            </table>
 
         <h3>Отзывы</h3>
         <img height="200" src="./images/review-1.jpeg" alt="фото Марк Г.">
