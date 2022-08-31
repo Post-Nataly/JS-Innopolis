@@ -1,26 +1,60 @@
 .colortext {
     color: #f52;
 }
+
 .colortext2 {
     color: #aaaaaa;
 }
+
+.colorlink {
+    font-weight: 600;
+    color: #018ad2;
+    text-decoration-line: none;
+}
+
+.colorlink:hover {
+    font-weight: 600;
+    color: #cc0;
+    text-decoration-line: none;
+}
+
 .header h1 {
     display: inline-block;
     position: absolute;
-    top: 0px;
+    margin: 10px;
 }
+
 .header h3 {
     display: inline-block;
 }
+
 table {
     border: 1px solid black;
 }
-td, th {
+
+td,
+th {
     padding: 3px;
     border: 1px solid black;
 }
-.iframe {
-    text-align: left;
-    margin-left: 10px;
-    size: 18px;
+
+.page {
+    font-size: 18px;
+    width: 1500px;
+    margin: auto;
+    float: left;
 }
+
+.botton {
+    padding: 8px 12px;
+}
+
+ul {
+    padding: 0px;
+   }
+
+.brd {
+    border: 4px;
+    border-style: dotted;
+}
+
