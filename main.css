@@ -65,16 +65,17 @@ th {
     border: 1px solid black;
 }
 
-#review {
+.review {
     width: 100%;
     border: 0 !important;
    }
-   TD#leftcol {
+.leftcol {
     width: 210px;
     border: 0 !important;
     vertical-align: top;
    }
-   TD#rightcol {
+
+.rightcol {
     border: 0 !important;
     vertical-align: top;
    }
