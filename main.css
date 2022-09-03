@@ -1,5 +1,14 @@
+.page {
+    width: 1500px;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .colortext {
-    color: #f52;
+    color: #FF5722;
 }
 
 .colortext2 {
@@ -8,7 +17,7 @@
 
 .colorlink {
     font-weight: 600;
-    color: #018ad2;
+    color: #008CF0;
     text-decoration-line: none;
 }
 
@@ -18,30 +27,56 @@
     text-decoration-line: none;
 }
 
-.page {
-    width: 1500px;
-    position: relative;
-    font-size: 18px;
-    background: #f8fafe;
-}
-
 .header h1 {
     display: inline-block;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    position: absolute;
+    margin: 10px;
 }
 
 .header h3 {
     display: inline-block;
 }
 
+.all-characteristics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    flex-grow: 1;
+}
+.color-phone {
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+}
+
+.color-phone__name {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.color-phone__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.square-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 .botton {
     padding: 8px 12px;
