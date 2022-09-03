@@ -18,23 +18,30 @@
     text-decoration-line: none;
 }
 
+.page {
+    width: 1500px;
+    position: relative;
+    font-size: 18px;
+    background: #f8fafe;
+}
+
 .header h1 {
     display: inline-block;
-    position: absolute;
-    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .header h3 {
     display: inline-block;
 }
 
-.page {
-    width: 1500px;
-    margin-left: 3%;
-    margin-right: 3%;
-    float: left;
-    font-size: 18px;
-}
 
 .botton {
     padding: 8px 12px;
