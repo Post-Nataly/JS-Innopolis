@@ -1,13 +1,16 @@
 header {
     margin-left: 51px;
+    margin-right: 49px;
 }
 
 main {
     margin-left: 51px;
+    margin-right: 49px;
 }
 
 footer {
     margin-left: 51px;
+    margin-right: 49px;
 }
 
 .page {
@@ -74,16 +77,10 @@ footer {
 .characteristics {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    flex-grow: 1;
 }
 
 .color-phone__list {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
     gap: 10px;
 }
 
@@ -121,6 +118,14 @@ button {
     flex-direction: column;
     list-style-image: url(images/Маркер.png);
     gap: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 420px;
 }
 
 .brdframe {
