@@ -63,7 +63,7 @@ footer {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
-    margin:30px 0 15px;
+    margin: 30px 0 15px;
 }
 
 .all-characteristics {
@@ -126,13 +126,104 @@ button {
     align-items: flex-start;
     gap: 40px;
     width: 420px;
+    margin-top: 30px;
 }
 
-.brdframe {
+.important {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 422px;
+    height: 275px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.prise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 132px;
+    height: 73px;
+}
+
+.oldprise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#oldprise {
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    height: 24px;
+    background: #F36223;
+    border-radius: 500px;
+    color: #FFFFFF;
+}
+
+.newprise {
+    font-size: 32px;
+}
+
+.delivery {
+    font-weight: 400;
+}
+
+.basket-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    padding: 20px 49px;
+    background: #F36223;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #888888;
+    line-height: 17px;
+}
+
+.blurb-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0 5px;
     border: 1px;
     border-style: dotted;
     border-color: #ccc;
 }
+
+/* .brdframe {
+    border: 1px;
+    border-style: dotted;
+    border-color: #ccc;
+} */
 
 table {
     border: 1px solid black;
