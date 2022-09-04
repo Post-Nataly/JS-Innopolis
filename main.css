@@ -1,10 +1,23 @@
+header {
+    margin-left: 51px;
+}
+
+main {
+    margin-left: 51px;
+}
+
+footer {
+    margin-left: 51px;
+}
+
 .page {
     width: 1500px;
     margin: 0px auto;
+    font-weight: 500;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #F8FAFE;
     line-height: 19px;
+    background: #F8FAFE;
 }
 
 .colortext {
@@ -16,7 +29,7 @@
 }
 
 .colorlink {
-    font-weight: 600;
+    font-weight: 400;
     color: #008CF0;
     text-decoration-line: none;
 }
@@ -40,18 +53,14 @@
 .phone {
     font-weight: 700;
     font-size: 32px;
-    margin: 15px 0;
-}
-
-.phone-color {
-    margin: 30px 0;
+    margin: 15px 0 30px;
 }
 
 .header-block {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
-    margin: 15px 0;
+    margin:30px 0 15px;
 }
 
 .all-characteristics {
@@ -67,7 +76,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 10px;
     flex-grow: 1;
 }
 
@@ -98,7 +106,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 10px;    
+    gap: 10px;
 }
 
 button {
@@ -108,26 +116,17 @@ button {
     border-radius: 4px;
 }
 
+.ul {
+    display: flex;
+    flex-direction: column;
+    list-style-image: url(images/Маркер.png);
+    gap: 10px;
+}
+
 .brdframe {
     border: 1px;
     border-style: dotted;
     border-color: #ccc;
-}
-
-header {
-    margin-left: 51px;
-}
-
-main {
-    margin-left: 51px;
-}
-
-footer {
-    margin-left: 51px;
-}
-
-ul {
-    padding: 0 18px;
 }
 
 table {
