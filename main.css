@@ -71,12 +71,6 @@
     flex-grow: 1;
 }
 
-.color-phone {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
 .color-phone__list {
     display: flex;
     flex-direction: row;
@@ -99,8 +93,19 @@
     box-sizing: border-box;
 }
 
-.botton {
-    padding: 8px 12px;
+.memory {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;    
+}
+
+button {
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #888888;
+    border-radius: 4px;
 }
 
 .brdframe {
@@ -122,12 +127,7 @@ footer {
 }
 
 ul {
-    padding: 18px;
-}
-
-
-p {
-    margin-top: 16px;
+    padding: 0 18px;
 }
 
 table {
