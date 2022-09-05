@@ -1,0 +1,81 @@
+.colortext {
+    color: #f52;
+}
+
+.colortext2 {
+    color: #aaaaaa;
+}
+
+.colorlink {
+    font-weight: 600;
+    color: #018ad2;
+    text-decoration-line: none;
+}
+
+.colorlink:hover {
+    font-weight: 600;
+    color: #cc0;
+    text-decoration-line: none;
+}
+
+.header h1 {
+    display: inline-block;
+    position: absolute;
+    margin: 10px;
+}
+
+.header h3 {
+    display: inline-block;
+}
+
+.page {
+    width: 1500px;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    font-size: 18px;
+}
+
+.botton {
+    padding: 8px 12px;
+}
+
+.brdframe {
+    border: 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+
+ul {
+    padding: 18px;
+   }
+
+
+p {
+    margin-top: 16px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td,
+th {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.review {
+    width: 100%;
+    border: 0 !important;
+   }
+.leftcol {
+    width: 210px;
+    border: 0 !important;
+    vertical-align: top;
+   }
+
+.rightcol {
+    border: 0 !important;
+    vertical-align: top;
+   }
