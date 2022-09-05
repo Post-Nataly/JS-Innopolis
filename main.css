@@ -1,4 +1,8 @@
 header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
     margin-left: 51px;
     margin-right: 49px;
 }
@@ -23,6 +27,13 @@ footer {
     background: #F8FAFE;
 }
 
+.logotext {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 44px;
+}
+
 .colortext {
     color: #FF5722;
 }
@@ -41,16 +52,6 @@ footer {
     font-weight: 600;
     color: #cc0;
     text-decoration-line: none;
-}
-
-.header {
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-#header {
-    font-weight: 700;
-    font-size: 44px;
 }
 
 .phone {
@@ -118,6 +119,8 @@ button {
     flex-direction: column;
     list-style-image: url(images/Маркер.png);
     gap: 10px;
+    padding: 0 17px;
+    margin: 0;
 }
 
 .sidebar {
@@ -156,6 +159,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 #oldprise {
@@ -210,13 +214,8 @@ button {
 }
 
 .blurb-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 10px 0 5px;
-    border: 1px;
-    border-style: dotted;
-    border-color: #ccc;
+    border: 1px dashed #888888;
 }
 
 /* .brdframe {
