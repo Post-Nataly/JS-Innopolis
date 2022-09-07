@@ -1,5 +1,41 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    margin-left: 51px;
+    margin-right: 49px;
+}
+
+main {
+    margin-left: 51px;
+    margin-right: 49px;
+}
+
+footer {
+    margin-left: 51px;
+    margin-right: 49px;
+}
+
+.page {
+    width: 1500px;
+    margin: 0px auto;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19px;
+    background: #F8FAFE;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 44px;
+}
+
 .colortext {
-    color: #f52;
+    color: #FF5722;
 }
 
 .colortext2 {
@@ -7,8 +43,8 @@
 }
 
 .colorlink {
-    font-weight: 600;
-    color: #018ad2;
+    font-weight: 400;
+    color: #008CF0;
     text-decoration-line: none;
 }
 
@@ -18,42 +54,175 @@
     text-decoration-line: none;
 }
 
-.header h1 {
+.phone {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 15px 0 30px;
+}
+
+.header-block {
     display: inline-block;
-    position: absolute;
-    margin: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 30px 0 15px;
 }
 
-.header h3 {
-    display: inline-block;
+.all-characteristics {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
 }
 
-.page {
-    width: 1500px;
-    margin-left: 3%;
-    margin-right: 3%;
-    float: left;
-    font-size: 18px;
+.characteristics {
+    display: flex;
+    flex-direction: column;
 }
 
-.botton {
-    padding: 8px 12px;
+.color-phone__list {
+    display: flex;
+    gap: 10px;
 }
 
-.brdframe {
+.square-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.memory {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    list-style-image: url(images/Маркер.png);
+    gap: 10px;
+    padding: 0 17px;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 420px;
+    margin-top: 30px;
+}
+
+.important {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 422px;
+    height: 275px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.prise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 132px;
+    height: 73px;
+}
+
+.oldprise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#oldprise {
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    height: 24px;
+    background: #F36223;
+    border-radius: 500px;
+    color: #FFFFFF;
+}
+
+.newprise {
+    font-size: 32px;
+}
+
+.delivery {
+    font-weight: 400;
+}
+
+.basket-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    padding: 20px 49px;
+    background: #F36223;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #888888;
+    line-height: 17px;
+}
+
+.blurb-list {
+    margin: 10px 0 5px;
+    border: 1px dashed #888888;
+}
+
+/* .brdframe {
     border: 1px;
     border-style: dotted;
     border-color: #ccc;
-}
-
-ul {
-    padding: 18px;
-   }
-
-
-p {
-    margin-top: 16px;
-}
+} */
 
 table {
     border: 1px solid black;
@@ -68,14 +237,15 @@ th {
 .review {
     width: 100%;
     border: 0 !important;
-   }
+}
+
 .leftcol {
     width: 210px;
     border: 0 !important;
     vertical-align: top;
-   }
+}
 
 .rightcol {
     border: 0 !important;
     vertical-align: top;
-   }
+}
