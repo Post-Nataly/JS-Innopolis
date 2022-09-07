@@ -3,18 +3,15 @@ header {
     flex-direction: row;
     align-items: center;
     height: 80px;
-    margin-left: 51px;
-    margin-right: 49px;
+    margin: 0 50px;
 }
 
 main {
-    margin-left: 51px;
-    margin-right: 49px;
+    margin: 0 50px;
 }
 
 footer {
-    margin-left: 51px;
-    margin-right: 49px;
+    margin: 0 50px;
 }
 
 .page {
@@ -49,9 +46,7 @@ footer {
 }
 
 .colorlink:hover {
-    font-weight: 600;
-    color: #cc0;
-    text-decoration-line: none;
+    color: #F36223;
 }
 
 .phone {
@@ -97,6 +92,15 @@ footer {
     border: 1px solid #888888;
     border-radius: 4px;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.square-image:hover {
+    background: #F2F2F2;
+}
+
+.square-image__selected {
+    border: 2px solid #F36223;
 }
 
 .memory {
@@ -106,13 +110,17 @@ footer {
     padding: 0px;
     gap: 10px;
 }
-
 button {
     padding: 10px 20px;
     background: none;
     border: 1px solid #888888;
     border-radius: 4px;
 }
+
+button:hover {
+    background: #F2F2F2;
+}
+
 
 .ul {
     display: flex;
@@ -201,6 +209,10 @@ button {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+}
+
+.basket-button:hover {
+    background: #DA4A0C;
 }
 
 .blurb {
