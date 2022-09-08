@@ -26,8 +26,13 @@ header {
     color: #FF5722;
 }
 
-.colortext2 {
-    color: #aaaaaa;
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    gap: 4px;
+    font-weight: 400;
 }
 
 .colorlink {
@@ -41,9 +46,19 @@ header {
 }
 
 .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 700;
     font-size: 32px;
-    margin: 15px 0 30px;
+    line-height: 39px;
+    padding: 0 0 20px;
+}
+
+.image-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .header-block {
@@ -64,6 +79,7 @@ header {
 .characteristics {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .color-phone__list {
