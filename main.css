@@ -1,3 +1,7 @@
+body {
+    background:#F8FAFE
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -11,8 +15,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 19px;
-    background: #F8FAFE;
+    line-height: 19.36px;
 }
 
 .logotext {
@@ -24,6 +27,10 @@ header {
 
 .colortext {
     color: #FF5722;
+}
+
+.colortext2 {
+    color: #888888;
 }
 
 .breadcrumbs {
@@ -61,11 +68,17 @@ header {
     gap: 10px;
 }
 
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .header-block {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-weight: 700;
     font-size: 16px;
-    margin: 30px 0 15px;
 }
 
 .all-characteristics {
@@ -80,6 +93,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 800px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .color-phone__list {
@@ -152,7 +168,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 422px;
+    justify-content: space-between;
+    width: 420px;
     height: 275px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -246,6 +263,52 @@ td,
 th {
     padding: 3px;
     border: 1px solid black;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    padding: 0px;
+    gap: 25px;
+}
+
+.reviews-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+}
+
+.reviews-header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#button-review {
+    box-sizing: border-box;
+    width: 168px;
+    height: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
 }
 
 .review {
