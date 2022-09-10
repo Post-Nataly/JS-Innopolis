@@ -1,5 +1,5 @@
 body {
-    background:#F8FAFE
+    background: #F8FAFE
 }
 
 header {
@@ -78,7 +78,6 @@ header {
     display: flex;
     flex-direction: row;
     font-weight: 700;
-    font-size: 16px;
 }
 
 .all-characteristics {
@@ -145,6 +144,9 @@ button:hover {
     background: #F2F2F2;
 }
 
+button:focus {
+    border: 2px solid #F36223;
+}
 
 .ul {
     display: flex;
@@ -293,36 +295,59 @@ th {
     line-height: 29px;
 }
 
-#button-review {
-    box-sizing: border-box;
-    width: 168px;
-    height: 39px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 20px;
-}
-
 .reviews-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
+    gap: 40px;
 }
 
 .review {
-    width: 100%;
-    border: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .leftcol {
-    width: 210px;
-    border: 0 !important;
-    vertical-align: top;
+    border-radius: 100px;
 }
 
 .rightcol {
-    border: 0 !important;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.information_review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.separator {
+    box-sizing: border-box;
+    border: 1px solid #888888;
+    align-self: stretch;
 }
