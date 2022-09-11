@@ -1,3 +1,7 @@
+body {
+    background: #F8FAFE
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -11,8 +15,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 19px;
-    background: #F8FAFE;
+    line-height: 19.36px;
 }
 
 .logotext {
@@ -27,7 +30,16 @@ header {
 }
 
 .colortext2 {
-    color: #aaaaaa;
+    color: #888888;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    gap: 4px;
+    font-weight: 400;
 }
 
 .colorlink {
@@ -41,16 +53,31 @@ header {
 }
 
 .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 700;
     font-size: 32px;
-    margin: 15px 0 30px;
+    line-height: 39px;
+    padding: 0 0 20px;
+}
+
+.image-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .header-block {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-weight: 700;
-    font-size: 16px;
-    margin: 30px 0 15px;
 }
 
 .all-characteristics {
@@ -64,6 +91,10 @@ header {
 .characteristics {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .color-phone__list {
@@ -113,6 +144,9 @@ button:hover {
     background: #F2F2F2;
 }
 
+button:focus {
+    border: 2px solid #F36223;
+}
 
 .ul {
     display: flex;
@@ -136,7 +170,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 422px;
+    justify-content: space-between;
+    width: 420px;
     height: 275px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -232,18 +267,87 @@ th {
     border: 1px solid black;
 }
 
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    padding: 0px;
+    gap: 25px;
+}
+
+.reviews-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+}
+
+.reviews-header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 .review {
-    width: 100%;
-    border: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .leftcol {
-    width: 210px;
-    border: 0 !important;
-    vertical-align: top;
+    border-radius: 100px;
 }
 
 .rightcol {
-    border: 0 !important;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.information_review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.separator {
+    box-sizing: border-box;
+    border: 1px solid #888888;
+    align-self: stretch;
 }
