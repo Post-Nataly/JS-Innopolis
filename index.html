@@ -12,8 +12,10 @@
 <body>
     <div class="page">
         <header>
-            <div><img height="43" src="./images/favicon.ico" alt="Логотип"></div>
-            <div class="logotext"><span class="colortext">Мой</span>Маркет</div>
+            <div class="logo">
+                <div><img height="43" src="./images/favicon.ico" alt="Логотип"></div>
+                <div class="logo__text"><span class="logo__colortext">Мой</span>Маркет</div>
+            </div>
         </header>
 
         <main>
@@ -27,9 +29,9 @@
                 <a class="colorlink" href="file:///E:/Документы/Жена/иннополис/Домашка/homework1/index.html">Apple</a>
             </div>
 
-            <div class="phone">Смартфон Apple iPhone 13</div>
+            <div class="phone-title">Смартфон Apple iPhone 13</div>
 
-            <div class="image-phone">
+            <div class="phone-image">
                 <img src="./images/image-1.png" alt="Экран+Камера">
                 <img src="./images/image-2.png" alt="Экран">
                 <img src="./images/image-3.png" alt="Вид с боку">
@@ -37,55 +39,61 @@
                 <img src="./images/image-5.png" alt="Камера+Экран">
             </div>
 
-            <!-- Характеристики -->
-            <div class="all-characteristics">
+            <div class="content">
+
+                <!-- Характеристики -->
 
                 <div class="characteristics">
 
                     <div class="block">
-                        <div class="header-block">Цвет товара: Синий</div>
-                        <div class="choice">
-                            <button class="square-image"><img height="60" src="./images/color-1.png"
+                        <div class="block-header">Цвет товара: Синий</div>
+                        <div class="selection">
+                            <button class="selection__color"><img height="60" src="./images/color-1.png"
                                     alt="Красный"></button>
-                            <button class="square-image"><img height="60" src="./images/color-3.png"
+                            <button class="selection__color"><img height="60" src="./images/color-3.png"
                                     alt="Розовый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-2.png"
+                            <button class="selection__color"><img height="60" src="./images/color-2.png"
                                     alt="Зеленый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-4.png"
+                            <button class="selection__color"><img height="60" src="./images/color-4.png"
                                     alt="Синий"></button>
-                            <button class="square-image"><img height="60" src="./images/color-5.png"
+                            <button class="selection__color"><img height="60" src="./images/color-5.png"
                                     alt="Белый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-6.png"
+                            <button class="selection__color"><img height="60" src="./images/color-6.png"
                                     alt="Черный"></button>
                         </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Конфигурация памяти: 128 ГБ</div>
-                        <div class="choice">
-                            <button class="button-memory">126 ГБ</button>
-                            <button class="button-memory">256 ГБ</button>
-                            <button class="button-memory">512 ГБ</button>
+                        <div class="block-header">Конфигурация памяти: 128 ГБ</div>
+                        <div class="selection">
+                            <button class="selection__memory">126 ГБ</button>
+                            <button class="selection__memory">256 ГБ</button>
+                            <button class="selection__memory">512 ГБ</button>
                         </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Характеристики товара</div>
-
-                        <ul class="ul">
-                            <li><span>Экран: <b>6.1</b></span></li>
-                            <li><span>Встроенная память: <b>128 ГБ</b></span></li>
-                            <li><span>Операционная система: <b>iOS 15</b></span></li>
-                            <li><span>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></span></li>
-                            <li><span>Процессор:</span> <a class="colorlink"
-                                    href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
-                                        Bionic</b></a></li>
-                            <li><span>Вес: <b>173 г</b></span></li>
-                        </ul>
+                        <div class="block-header">Характеристики товара</div>
+                        <div class="list">
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Экран: <b>6.1</b></div>
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Операционная система:
+                                <b>iOS 15</b>
+                            </div>
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Беспроводные интерфейсы:
+                                <b>NFC, Bluetooth, Wi-Fi</b>
+                            </div>
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Встроенная память:
+                                <b>128 ГБ</b>
+                            </div>
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Процессор:<a
+                                    class="colorlink" href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
+                                        Bionic</b></a></div>
+                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Вес: <b>173 г</b></div>
+                        </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Описание</div>
+                        <div class="block-header">Описание</div>
                         <div>Наша самая совершенная система двух камер.
                             <br>Особый взгляд на прочность дисплея.
                             <br>Чип, с которым всё супербыстро.
@@ -133,21 +141,20 @@
 
                     <div class="important">
                         <div class="prise">
-                            <div id="oldprise" class="oldprise">
-                                75 990₽
-                                <div class="discount">-8%</div>
+                            <div class="oldprise">
+                                <div class="oldprise__price">75 990₽</div>
+                                <div class="oldprise__discount">-8%</div>
                             </div>
                             <div class="newprise"> 67 990₽</div>
                         </div>
                         <div class="delivery">
-                            Самовывоз в четверг, 1 сентября - <b>бесплатно</b>
-                            <br>Курьером в четверг, 1 сентября - <b>бесплатно</b>
+                            <div>Самовывоз в четверг, 1 сентября - <b>бесплатно</b></div>
+                            <div>Курьером в четверг, 1 сентября - <b>бесплатно</b></div>
                         </div>
                         <button class="basket-button">Добавить в корзину</button>
                     </div>
 
-                    <div class="blurb">
-                        Реклама
+                    <div class="blurb">Реклама
                         <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
                         <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
                     </div>

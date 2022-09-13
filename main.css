@@ -2,35 +2,28 @@ body {
     background: #F8FAFE
 }
 
-header {
+.page {
+    width: 1440px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 80px;
 }
 
-.page {
-    width: 1440px;
-    margin: 0px auto;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 19.36px;
-}
-
-.logotext {
+.logo__text {
     display: flex;
     flex-direction: row;
     font-weight: 700;
     font-size: 44px;
 }
 
-.colortext {
+.logo__colortext {
     color: #FF5722;
-}
-
-.colortext2 {
-    color: #888888;
 }
 
 .breadcrumbs {
@@ -43,6 +36,7 @@ header {
 }
 
 .colorlink {
+    font-size: 16px;
     font-weight: 400;
     color: #008CF0;
     text-decoration-line: none;
@@ -52,7 +46,7 @@ header {
     color: #F36223;
 }
 
-.phone {
+.phone-title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,30 +56,33 @@ header {
     padding: 0 0 20px;
 }
 
-.image-phone {
+.phone-image {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.block {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.header-block {
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-}
-
-.all-characteristics {
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
     margin-top: 30px;
+}
+
+.block {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block-header {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
 }
 
 .characteristics {
@@ -95,65 +92,73 @@ header {
     gap: 30px;
 }
 
-.choice {
+.selection {
     display: flex;
     gap: 10px;
 }
 
-.square-image {
+.selection__color {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 10px;
     width: 80px;
     height: 80px;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.square-image:hover {
-    background: #F2F2F2;
-}
-
-.square-image__selected {
-    border: 2px solid #F36223;
-}
-
-/* .memory {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-} */
-
-button {
-    padding: 10px 20px;
     background: none;
     border: 1px solid #888888;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-button:hover {
+.selection__color:hover {
     background: #F2F2F2;
 }
 
-button:focus {
+.selection__color:focus {
     border: 2px solid #F36223;
-    padding: 8px 20px;
 }
 
-.ul {
+.selection__memory {
     display: flex;
     flex-direction: column;
-    list-style-image: url(images/Маркер.png);
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 94px;
+    height: 39px;
+    background: none;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selection__memory:hover {
+    background: #F2F2F2;
+}
+
+.selection__memory:focus {
+    border: 2px solid #F36223;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    padding: 0 17px;
-    margin: 0;
+}
+
+.row-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.circle {
+    display: flex;
+    border-radius: 100%;
+    height: 8px;
+    content: url(images/Маркер.png);
 }
 
 .sidebar {
@@ -190,12 +195,12 @@ button:focus {
     gap: 10px;
 }
 
-#oldprise {
+.oldprise__price {
     text-decoration-line: line-through;
     color: #888888;
 }
 
-.discount {
+.oldprise__discount {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -206,6 +211,7 @@ button:focus {
     background: #F36223;
     border-radius: 500px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .newprise {
@@ -213,8 +219,11 @@ button:focus {
 }
 
 .delivery {
+    display: flex;
+    flex-direction: column;
     font-weight: 400;
     padding: 0px 0px 20px;
+    gap: 10px;
 }
 
 .basket-button {
@@ -223,8 +232,10 @@ button:focus {
     justify-content: center;
     align-items: center;
     width: 380px;
+    height: 64px;
     padding: 20px 49px;
     background: #F36223;
+    border: 0;
     border-radius: 4px;
     font-weight: 400;
     font-size: 20px;
@@ -234,7 +245,6 @@ button:focus {
 
 .basket-button:hover {
     background: #DA4A0C;
-    border-radius: 4px;
 }
 
 .basket-button:focus {
@@ -275,7 +285,7 @@ th {
     gap: 25px;
 }
 
-.reviews-header {
+.reviews-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -284,7 +294,7 @@ th {
     gap: 10px;
 }
 
-.reviews-header-text {
+.reviews-title-text {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -292,6 +302,10 @@ th {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+}
+
+.counter-color {
+    color: #888888;
 }
 
 .reviews-list {
