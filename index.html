@@ -42,7 +42,6 @@
             <div class="content">
 
                 <!-- Характеристики -->
-
                 <div class="characteristics">
 
                     <div class="block">
@@ -66,29 +65,29 @@
                     <div class="block">
                         <div class="block-header">Конфигурация памяти: 128 ГБ</div>
                         <div class="selection">
-                            <button class="selection__memory">126 ГБ</button>
-                            <button class="selection__memory">256 ГБ</button>
-                            <button class="selection__memory">512 ГБ</button>
+                            <button class="selection__memory"><b>126 ГБ</b></button>
+                            <button class="selection__memory"><b>256 ГБ</b></button>
+                            <button class="selection__memory"><b>512 ГБ</b></button>
                         </div>
                     </div>
 
                     <div class="block">
                         <div class="block-header">Характеристики товара</div>
-                        <div class="list">
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Экран: <b>6.1</b></div>
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Операционная система:
+                        <div class="characteristics-list">
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Экран: <b>6.1</b></div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Операционная система:
                                 <b>iOS 15</b>
                             </div>
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Беспроводные интерфейсы:
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Беспроводные интерфейсы:
                                 <b>NFC, Bluetooth, Wi-Fi</b>
                             </div>
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Встроенная память:
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Встроенная память:
                                 <b>128 ГБ</b>
                             </div>
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Процессор:<a
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Процессор:<a
                                     class="colorlink" href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
                                         Bionic</b></a></div>
-                            <div class="row-list"><img class="circle" src="./images/Маркер.png">Вес: <b>173 г</b></div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Вес: <b>173 г</b></div>
                         </div>
                     </div>
 
@@ -136,7 +135,6 @@
                 </div>
 
                 <!-- Сайдбар -->
-
                 <div class="sidebar">
 
                     <div class="important">
@@ -155,42 +153,47 @@
                     </div>
 
                     <div class="blurb">Реклама
-                        <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
-                        <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
+                        <div class="blurb-list">
+                            <iframe src="./ads.html" width="420" height="300" class="blurb-list__frame"></iframe>
+                            <iframe src="./ads.html" width="420" height="300" class="blurb-list__frame"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Отзывы -->
             <div class="reviews">
-                <div class="reviews-header">
-                    <div class="reviews-header-text">
+
+                <div class="reviews-title">
+                    <div class="reviews-title__text">
                         <div>Отзывы</div>
-                        <div class="colortext2">425</div>
+                        <div class="reviews-title__text_amount">425</div>
                     </div>
-                    <button><b>Добавить отзыв</b></button>
+                    <button class="review-title__button"><b>Добавить отзыв</b></button>
                 </div>
 
                 <div class="reviews-list">
+
                     <div class="review">
-                        <div class="leftcol"><img src="./images/Фотография автора.png" alt="фото автора">
+                        <div class="review-leftcol"><img src="./images/автор1.png" alt="фото автора">
                         </div>
-                        <div class="rightcol">
-                            <div class="name">
+                        <div class="review-rightcol">
+                            <div class="review-header">
                                 Марк Г.
-                                <div class="stars">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
+                                <div class="review-stars">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
                                 </div>
                             </div>
-                            <div class="information_review">
+                            <div class="review-information">
                                 <div><b>Опыт использования:</b> менее месяца</div>
                                 <div><b>Достоинства:</b>
                                     <br>это мой первый айфон после после огромного количества телефонов на андроиде.
-                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,
+                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
+                                    неплохая,
                                     ширик тоже на высоте.
                                 </div>
                                 <div><b>Недостатки:</b>
@@ -206,19 +209,19 @@
                     <div class="separator"></div>
 
                     <div class="review">
-                        <div class="leftcol"><img src="./images/Фотография автора (1).png" alt="фото автора">
+                        <div class="review-leftcol"><img src="./images/автор2.png" alt="фото автора">
                         </div>
-                        <div class="rightcol">
-                            <div class="name">
+                        <div class="review-rightcol">
+                            <div class="review-header">
                                 Валерий Коваленко
-                                <div class="stars"><img src="./images/Звезда.png" alt="звездочка_золотая">
+                                <div class="review-stars"><img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда (1).png" alt="звездочка_серая">
+                                    <img src="./images/Звезда2.png" alt="звездочка_серая">
                                 </div>
                             </div>
-                            <div class="information_review">
+                            <div class="review-information">
                                 <div><b>Опыт использования:</b> менее месяца</div>
                                 <div><b>Достоинства:</b>
                                     <br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
@@ -232,6 +235,7 @@
                 </div>
             </div>
 
+            <!-- Сравнение -->
             <div class="header-block">Сравнение моделей</div>
             <table>
                 <thead>

@@ -88,6 +88,7 @@ body {
 .characteristics {
     display: flex;
     flex-direction: column;
+    max-width: 880px;
     align-items: flex-start;
     gap: 30px;
 }
@@ -141,13 +142,13 @@ body {
     border: 2px solid #F36223;
 }
 
-.list {
+.characteristics-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.row-list {
+.characteristics-list__row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -255,32 +256,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
     font-size: 14px;
-    font-weight: 400px;
     color: #888888;
     line-height: 17px;
 }
 
 .blurb-list {
-    margin: 10px 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.blurb-list__frame{
     border: 1px dashed #888888;
-}
-
-table {
-    border: 1px solid black;
-}
-
-td,
-th {
-    padding: 3px;
-    border: 1px solid black;
 }
 
 .reviews {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 800px;
+    max-width: 880px;
     padding: 0px;
     gap: 25px;
 }
@@ -294,7 +291,7 @@ th {
     gap: 10px;
 }
 
-.reviews-title-text {
+.reviews-title__text {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -304,8 +301,23 @@ th {
     line-height: 29px;
 }
 
-.counter-color {
+.reviews-title__text_amount {
     color: #888888;
+}
+
+.review-title__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 39px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .reviews-list {
@@ -322,18 +334,18 @@ th {
     gap: 30px;
 }
 
-.leftcol {
+.review-leftcol {
     border-radius: 100px;
 }
 
-.rightcol {
+.review-rightcol {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
 }
 
-.name {
+.review-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -342,14 +354,13 @@ th {
     line-height: 24px;
 }
 
-.stars {
+.review-stars {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    align-self: stretch;
 }
 
-.information_review {
+.review-information {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -363,4 +374,14 @@ th {
     box-sizing: border-box;
     border: 1px solid #888888;
     align-self: stretch;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td,
+th {
+    padding: 3px;
+    border: 1px solid black;
 }
