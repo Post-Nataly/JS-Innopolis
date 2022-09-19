@@ -12,8 +12,10 @@
 <body>
     <div class="page">
         <header>
-            <div><img height="43" src="./images/favicon.ico" alt="Логотип"></div>
-            <div class="logotext"><span class="colortext">Мой</span>Маркет</div>
+            <div class="logo">
+                <div><img height="43" src="./images/favicon.ico" alt="Логотип"></div>
+                <div class="logo__text"><span class="logo__colortext">Мой</span>Маркет</div>
+            </div>
         </header>
 
         <main>
@@ -27,9 +29,9 @@
                 <a class="colorlink" href="file:///E:/Документы/Жена/иннополис/Домашка/homework1/index.html">Apple</a>
             </div>
 
-            <div class="phone">Смартфон Apple iPhone 13</div>
+            <div class="phone-title">Смартфон Apple iPhone 13</div>
 
-            <div class="image-phone">
+            <div class="phone-image">
                 <img src="./images/image-1.png" alt="Экран+Камера">
                 <img src="./images/image-2.png" alt="Экран">
                 <img src="./images/image-3.png" alt="Вид с боку">
@@ -37,52 +39,60 @@
                 <img src="./images/image-5.png" alt="Камера+Экран">
             </div>
 
-            <!-- Характеристики -->
-            <div class="all-characteristics">
+            <div class="content">
 
+                <!-- Характеристики -->
                 <div class="characteristics">
 
                     <div class="block">
-                        <div class="header-block">Цвет товара: Синий</div>
-                        <div class="color-phone__list">
-                            <button class="square-image"><img height="60" src="./images/color-1.png"
+                        <div class="block-header">Цвет товара: Синий</div>
+                        <div class="selection">
+                            <button class="selection__color"><img height="60" src="./images/color-1.png"
                                     alt="Красный"></button>
-                            <button class="square-image"><img height="60" src="./images/color-3.png"
+                            <button class="selection__color"><img height="60" src="./images/color-3.png"
                                     alt="Розовый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-2.png"
+                            <button class="selection__color"><img height="60" src="./images/color-2.png"
                                     alt="Зеленый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-4.png"
+                            <button class="selection__color"><img height="60" src="./images/color-4.png"
                                     alt="Синий"></button>
-                            <button class="square-image"><img height="60" src="./images/color-5.png"
+                            <button class="selection__color"><img height="60" src="./images/color-5.png"
                                     alt="Белый"></button>
-                            <button class="square-image"><img height="60" src="./images/color-6.png"
+                            <button class="selection__color"><img height="60" src="./images/color-6.png"
                                     alt="Черный"></button>
                         </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Конфигурация памяти: 128 ГБ</div>
-                        <div class="memory"><button>126 ГБ</button><button>256 ГБ</button><button>512 ГБ</button>
+                        <div class="block-header">Конфигурация памяти: 128 ГБ</div>
+                        <div class="selection">
+                            <button class="selection__memory"><b>126 ГБ</b></button>
+                            <button class="selection__memory"><b>256 ГБ</b></button>
+                            <button class="selection__memory"><b>512 ГБ</b></button>
                         </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Характеристики товара</div>
-
-                        <ul class="ul">
-                            <li><span>Экран: <b>6.1</b></span></li>
-                            <li><span>Встроенная память: <b>128 ГБ</b></span></li>
-                            <li><span>Операционная система: <b>iOS 15</b></span></li>
-                            <li><span>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></span></li>
-                            <li><span>Процессор:</span> <a class="colorlink"
-                                    href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
-                                        Bionic</b></a></li>
-                            <li><span>Вес: <b>173 г</b></span></li>
-                        </ul>
+                        <div class="block-header">Характеристики товара</div>
+                        <div class="characteristics-list">
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Экран: <b>6.1</b></div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Операционная система:
+                                <b>iOS 15</b>
+                            </div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Беспроводные интерфейсы:
+                                <b>NFC, Bluetooth, Wi-Fi</b>
+                            </div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Встроенная память:
+                                <b>128 ГБ</b>
+                            </div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Процессор:<a
+                                    class="colorlink" href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
+                                        Bionic</b></a></div>
+                            <div class="characteristics-list__row"><img class="circle" src="./images/Маркер.png" alt="маркер">Вес: <b>173 г</b></div>
+                        </div>
                     </div>
 
                     <div class="block">
-                        <div class="header-block">Описание</div>
+                        <div class="block-header">Описание</div>
                         <div>Наша самая совершенная система двух камер.
                             <br>Особый взгляд на прочность дисплея.
                             <br>Чип, с которым всё супербыстро.
@@ -125,62 +135,65 @@
                 </div>
 
                 <!-- Сайдбар -->
-
                 <div class="sidebar">
 
                     <div class="important">
                         <div class="prise">
-                            <div id="oldprise" class="oldprise">
-                                75 990₽
-                                <div class="discount">-8%</div>
+                            <div class="oldprise">
+                                <div class="oldprise__price">75 990₽</div>
+                                <div class="oldprise__discount">-8%</div>
                             </div>
                             <div class="newprise"> 67 990₽</div>
                         </div>
                         <div class="delivery">
-                            Самовывоз в четверг, 1 сентября - <b>бесплатно</b>
-                            <br>Курьером в четверг, 1 сентября - <b>бесплатно</b>
+                            <div>Самовывоз в четверг, 1 сентября - <b>бесплатно</b></div>
+                            <div>Курьером в четверг, 1 сентября - <b>бесплатно</b></div>
                         </div>
                         <button class="basket-button">Добавить в корзину</button>
                     </div>
 
-                    <div class="blurb">
-                        Реклама
-                        <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
-                        <iframe src="./ads.html" width="420" height="300" class="blurb-list"></iframe>
+                    <div class="blurb">Реклама
+                        <div class="blurb-list">
+                            <iframe src="./ads.html" width="420" height="300" class="blurb-list__frame"></iframe>
+                            <iframe src="./ads.html" width="420" height="300" class="blurb-list__frame"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Отзывы -->
             <div class="reviews">
-                <div class="reviews-header">
-                    <div class="reviews-header-text">
+
+                <div class="reviews-title">
+                    <div class="reviews-title__text">
                         <div>Отзывы</div>
-                        <div class="colortext2">425</div>
+                        <div class="reviews-title__text_amount">425</div>
                     </div>
-                    <button><b>Добавить отзыв</b></button>
+                    <button class="review-title__button"><b>Добавить отзыв</b></button>
                 </div>
 
                 <div class="reviews-list">
+
                     <div class="review">
-                        <div class="leftcol"><img src="./images/Фотография автора.png" alt="фото автора">
+                        <div class="review-leftcol"><img src="./images/автор1.png" alt="фото автора">
                         </div>
-                        <div class="rightcol">
-                            <div class="name">
+                        <div class="review-rightcol">
+                            <div class="review-header">
                                 Марк Г.
-                                <div class="stars">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда.png" alt="звездочка_золотая">
+                                <div class="review-stars">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                    <img src="./images/Звезда.png" alt="звездочка-золотая">
                                 </div>
                             </div>
-                            <div class="information_review">
+                            <div class="review-information">
                                 <div><b>Опыт использования:</b> менее месяца</div>
                                 <div><b>Достоинства:</b>
                                     <br>это мой первый айфон после после огромного количества телефонов на андроиде.
-                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,
+                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
+                                    неплохая,
                                     ширик тоже на высоте.
                                 </div>
                                 <div><b>Недостатки:</b>
@@ -196,19 +209,19 @@
                     <div class="separator"></div>
 
                     <div class="review">
-                        <div class="leftcol"><img src="./images/Фотография автора (1).png" alt="фото автора">
+                        <div class="review-leftcol"><img src="./images/автор2.png" alt="фото автора">
                         </div>
-                        <div class="rightcol">
-                            <div class="name">
+                        <div class="review-rightcol">
+                            <div class="review-header">
                                 Валерий Коваленко
-                                <div class="stars"><img src="./images/Звезда.png" alt="звездочка_золотая">
+                                <div class="review-stars"><img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
                                     <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                    <img src="./images/Звезда (1).png" alt="звездочка_серая">
+                                    <img src="./images/Звезда2.png" alt="звездочка_серая">
                                 </div>
                             </div>
-                            <div class="information_review">
+                            <div class="review-information">
                                 <div><b>Опыт использования:</b> менее месяца</div>
                                 <div><b>Достоинства:</b>
                                     <br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
@@ -222,6 +235,7 @@
                 </div>
             </div>
 
+            <!-- Сравнение -->
             <div class="header-block">Сравнение моделей</div>
             <table>
                 <thead>
