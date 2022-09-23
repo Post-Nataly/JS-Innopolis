@@ -10,15 +10,17 @@
 </head>
 
 <body>
-    <div class="page">
-        <header>
+    <header class="page">
+        <div class="page__section">
             <div class="logo">
                 <img class="logo__image" src="./images/favicon.ico" alt="Логотип">
                 <div class="logo__text"><span class="logo__colortext">Мой</span>Маркет</div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
+    <main class="page">
+        <div class="page__section">
             <div class="breadcrumbs">
                 <a class="breadcrumbs__colorlink"
                     href="file:///E:/Документы/Жена/иннополис/Домашка/homework1/index.html">Электроника</a>
@@ -33,14 +35,14 @@
                     href="file:///E:/Документы/Жена/иннополис/Домашка/homework1/index.html">Apple</a>
             </div>
 
-            <div class="phone phone_margin">
+            <div class="phone">
                 <div class="phone__title">Смартфон Apple iPhone 13</div>
                 <div class="phone__image">
-                    <img src="./images/image-1.png" alt="Экран+Камера">
-                    <img src="./images/image-2.png" alt="Экран">
-                    <img src="./images/image-3.png" alt="Вид с боку">
-                    <img src="./images/image-4.png" alt="Камера">
-                    <img src="./images/image-5.png" alt="Камера+Экран">
+                    <img class="phone__img" src="./images/image-1.png" alt="Экран+Камера">
+                    <img class="phone__img" src="./images/image-2.png" alt="Экран">
+                    <img class="phone__img" src="./images/image-3.png" alt="Вид с боку">
+                    <img class="phone__img" src="./images/image-4.png" alt="Камера">
+                    <img class="phone__img" src="./images/image-5.png" alt="Камера+Экран">
                 </div>
             </div>
 
@@ -76,26 +78,24 @@
                     <div class="block">
                         <div class="block__header">Характеристики товара</div>
                         <div class="block__list">
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Экран:
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Экран:
                                 <b>6.1</b>
                             </div>
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Операционная
-                                система:
-                                <b>iOS 15</b>
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                                    alt="маркер">Операционная система: <b>iOS 15</b>
                             </div>
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Беспроводные
-                                интерфейсы:
-                                <b>NFC, Bluetooth, Wi-Fi</b>
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                                    alt="маркер">Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b>
                             </div>
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Встроенная
-                                память:
-                                <b>128 ГБ</b>
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Встроенная
+                                память: <b>128 ГБ</b>
                             </div>
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Процессор:<a
-                                    class="colorlink" href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15
-                                        Bionic</b></a></div>
-                            <div class="row"><img class="circle" src="./images/Маркер.png" alt="маркер">Вес: <b>173
-                                    г</b></div>
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                                    alt="маркер">Процессор:<a class="colorlink"
+                                    href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15 Bionic</b></a></div>
+                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Вес:
+                                <b>173 г</b>
+                            </div>
                         </div>
                     </div>
 
@@ -110,7 +110,8 @@
                             </div>
                             <div class="paragraph">Мы разработали совершенно новую схему расположения и развернули
                                 объективы на 45 градусов.
-                                Благодаря этому внутри корпуса поместилась наша лучшая система двухкамер с увеличенной
+                                Благодаря этому внутри корпуса поместилась наша лучшая система двухкамер с
+                                увеличенной
                                 матрицей
                                 широкоугольной камеры.
                                 <br>Кроме того, мы освободили место для системы оптической стабилизации изображения
@@ -148,52 +149,48 @@
 
                     <div class="block">
                         <div class="block__header">Сравнение моделей</div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Модель</th>
-                                    <th>Вес</th>
-                                    <th>Высота</th>
-                                    <th>Ширина</th>
-                                    <th>Толщина</th>
-                                    <th>Чип</th>
-                                    <th>Объём памяти</th>
-                                    <th>Аккумулятор</th>
-                                </tr>
-                            </thead>
+                        <table class="block__table">
+                            <tr class="table-compare">
+                                <th class="table-compare__head">Модель</th>
+                                <th class="table-compare__head">Вес</th>
+                                <th class="table-compare__head">Высота</th>
+                                <th class="table-compare__head">Ширина</th>
+                                <th class="table-compare__head">Толщина</th>
+                                <th class="table-compare__head">Чип</th>
+                                <th class="table-compare__head">Объём памяти</th>
+                                <th class="table-compare__head">Аккумулятор</th>
+                            </tr>
 
-                            <tbody>
-                                <tr>
-                                    <td>Iphone 11</td>
-                                    <td>194 грамма</td>
-                                    <td>150.9 мм</td>
-                                    <td>75.7 мм</td>
-                                    <td>8.3 мм</td>
-                                    <td>A13 Bionik chip</td>
-                                    <td>до 128 Гб</td>
-                                    <td>До 17 часов</td>
-                                </tr>
-                                <tr>
-                                    <td>Iphone 12</td>
-                                    <td>164 грамма</td>
-                                    <td>146.7 мм</td>
-                                    <td>71.5 мм</td>
-                                    <td>7.4 мм</td>
-                                    <td>A14 Bionik chip</td>
-                                    <td>до 256 Гб</td>
-                                    <td>До 19 часов</td>
-                                </tr>
-                                <tr>
-                                    <td>Iphone 13</td>
-                                    <td>174 грамма</td>
-                                    <td>146.7 мм</td>
-                                    <td>71.5 мм</td>
-                                    <td>7.65 мм</td>
-                                    <td>A15 Bionik chip</td>
-                                    <td>до 512 Гб</td>
-                                    <td>До 19 часов</td>
-                                </tr>
-                            </tbody>
+                            <tr class="table-compare">
+                                <td class="table-compare__cell">Iphone 11</td>
+                                <td class="table-compare__cell">194 грамма</td>
+                                <td class="table-compare__cell">150.9 мм</td>
+                                <td class="table-compare__cell">75.7 мм</td>
+                                <td class="table-compare__cell">8.3 мм</td>
+                                <td class="table-compare__cell">A13 Bionik chip</td>
+                                <td class="table-compare__cell">до 128 Гб</td>
+                                <td class="table-compare__cell">До 17 часов</td>
+                            </tr>
+                            <tr class="table-compare">
+                                <td class="table-compare__cell">Iphone 12</td>
+                                <td class="table-compare__cell">164 грамма</td>
+                                <td class="table-compare__cell">146.7 мм</td>
+                                <td class="table-compare__cell">71.5 мм</td>
+                                <td class="table-compare__cell">7.4 мм</td>
+                                <td class="table-compare__cell">A14 Bionik chip</td>
+                                <td class="table-compare__cell">до 256 Гб</td>
+                                <td class="table-compare__cell">До 19 часов</td>
+                            </tr>
+                            <tr class="table-compare">
+                                <td class="table-compare__cell">Iphone 13</td>
+                                <td class="table-compare__cell">174 грамма</td>
+                                <td class="table-compare__cell">146.7 мм</td>
+                                <td class="table-compare__cell">71.5 мм</td>
+                                <td class="table-compare__cell">7.65 мм</td>
+                                <td class="table-compare__cell">A15 Bionik chip</td>
+                                <td class="table-compare__cell">до 512 Гб</td>
+                                <td class="table-compare__cell">До 19 часов</td>
+                            </tr>
                         </table>
                     </div>
 
@@ -201,10 +198,9 @@
 
                         <div class="reviews__title">
                             <div class="reviews__text">
-                                <div>Отзывы</div>
-                                <div class="reviews__text_amount">425</div>
+                                Отзывы
+                                <div class="reviews__text reviews__text_grey">425</div>
                             </div>
-                            <button class="reviews__button"><b>Добавить отзыв</b></button>
                         </div>
 
                         <div class="reviews__list">
@@ -215,24 +211,25 @@
                                     <div class="review__name">
                                         Марк Г.
                                         <div class="review__stars">
-                                            <img src="./images/Звезда.png" alt="звездочка-золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка-золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка-золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка-золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка-золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка-золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка-золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка-золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка-золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка-золотая">
                                         </div>
                                     </div>
                                     <div class="review__information">
-                                        <div><b>Опыт использования:</b> менее месяца</div>
-                                        <div><b>Достоинства:</b>
+                                        <div class="paragraph"><b>Опыт использования:</b> менее месяца</div>
+                                        <div class="paragraph"><b>Достоинства:</b>
                                             <br>это мой первый айфон после после огромного количества телефонов на
                                             андроиде.
                                             всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
                                             неплохая,
                                             ширик тоже на высоте.
                                         </div>
-                                        <div><b>Недостатки:</b>
-                                            <br>к самому устройству мало имеет отношение, но перенос данных с андроида -
+                                        <div class="paragraph"><b>Недостатки:</b>
+                                            <br>к самому устройству мало имеет отношение, но перенос данных с
+                                            андроида -
                                             адская вещь) а если нужно переносить фото с компа, то это только через
                                             itunes,
                                             который урезает
@@ -252,22 +249,38 @@
                                         Валерий Коваленко
                                         <div class="review__stars"><img src="./images/Звезда.png"
                                                 alt="звездочка_золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                            <img src="./images/Звезда.png" alt="звездочка_золотая">
-                                            <img src="./images/Звезда2.png" alt="звездочка_серая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
+                                            <img class="star" src="./images/Звезда2.png" alt="звездочка_серая">
                                         </div>
                                     </div>
                                     <div class="review__information">
-                                        <div><b>Опыт использования:</b> менее месяца</div>
-                                        <div><b>Достоинства:</b>
+                                        <div class="paragraph"><b>Опыт использования:</b> менее месяца</div>
+                                        <div class="paragraph"><b>Достоинства:</b>
                                             <br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
                                         </div>
-                                        <div><b>Недостатки:</b>
+                                        <div class="paragraph"><b>Недостатки:</b>
                                             <br>Плохая ремонтопригодность
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="block block_padding">
+                                <div class="block__header"><b>Добавить свой отзыв</b></div>
+                                <form class="block__form">
+                                    <fieldset class="fieldset-review">
+                                        <div class="fieldset-review__field">
+                                            <input class="input-review__name" type="text" name="name"
+                                                placeholder="Имя и фамилия" >
+                                            <input class="input-review__rating" type="number" name="rating"
+                                                placeholder="Оценка" min="0" max="5" step="1">
+                                        </div>
+                                            <textarea class="textarea-review" name="review"
+                                                placeholder="Текст отзыва"></textarea>
+                                    </fieldset>
+                                </form>
+                                <button class="reviews__button"><b>Добавить отзыв</b></button>
                             </div>
                         </div>
                     </div>
@@ -299,19 +312,19 @@
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
 
-    <footer>
-        <div class="footer">
-            <div class="footer__left">
-                <b>© ООО «<span class="logo__colortext">Мой</span>Маркет», 2018-2022.</b>
-                <span>Для уточнения информации звоните по номеру <a class="colorlink" href="tel:7900000000">+7 900 000 0000</a>,</span>
-                <span>а предложения по сотрудничеству отправляйте на почту <a class="colorlink" href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
-            </div>
-            <div class="footer__right">
-                <br><a class="colorlink" href="#header">Наверх</a>
-            </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <b>© ООО «<span class="logo__colortext">Мой</span>Маркет», 2018-2022.</b>
+            <span>Для уточнения информации звоните по номеру <a class="colorlink" href="tel:7900000000">+7 900 000
+                    0000</a>,</span>
+            <span>а предложения по сотрудничеству отправляйте на почту <a class="colorlink"
+                    href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
+        </div>
+        <div class="footer__right">
+            <br><a class="colorlink" href="#header">Наверх</a>
         </div>
     </footer>
 </body>
