@@ -351,6 +351,7 @@ body {
     padding: 0 20px;
     border: 1px solid #888888;
     outline: none;
+    flex-grow: 1;
 }
 
 .input-review__rating {
