@@ -361,42 +361,37 @@ body {
 
 .input-review__name {
     height: 48px;
-    min-width: 451px;
+    width: 495px;;
     padding: 0 20px;
     border: 1px solid #888888;
     outline: none;
-    flex-grow: 1;
 }
 
 .input-review__rating {
     width: 133px;
     height: 48px;
-    padding: 0px 20px;
+    padding: 0 20px;
     border: 1px solid #888888;
     outline: none;
 }
 
 .input-review__name:hover {
     padding: 15px 20px;
-    font-size: 16px;
     height: 18px;
     border: 1px solid black;
 }
 
 .input-review__rating:hover {
     padding: 15px 20px;
-    font-size: 16px;
     height: 18px;
     border: 1px solid black;
 }
 
 .input-review__name:focus {
-    font-size: 16px;
     border: 1px solid black;
 }
 
 .input-review__rating:focus {
-    font-size: 16px;
     border: 1px solid black;
 }
 
@@ -406,7 +401,6 @@ body {
     height: 200px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 19px;
     resize: none;
     outline: none;
@@ -418,14 +412,11 @@ body {
 }
 
 .textarea-review:focus {
-    font-size: 16px;
     border: 1px solid black;
-
 }
 
 input::placeholder {
     color: #888888;
-    font-size: 16px;
 }
 
 .reviews__button {
@@ -440,7 +431,6 @@ input::placeholder {
     background: #F36223;
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 16px;
     font-weight: 400;
 }
 
@@ -588,7 +578,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 16px;
     color: #008CF0;
 }
 
@@ -622,13 +611,9 @@ input::placeholder {
     }
 
     .input-review__name {
-        min-width: 337px;
+        width: 337px;
     }
-    
-    .content__sidebar {
-        width: 360px;
-    }
-    
+          
     .important__basket-button {
         width: 320px;
     }
