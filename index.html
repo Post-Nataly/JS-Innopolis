@@ -78,22 +78,23 @@
                     <div class="block">
                         <div class="block__header">Характеристики товара</div>
                         <div class="block__list">
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Экран:
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Экран:
                                 <b>6.1</b>
                             </div>
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png"
                                     alt="маркер">Операционная система: <b>iOS 15</b>
                             </div>
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png"
                                     alt="маркер">Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b>
                             </div>
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Встроенная
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png"
+                                    alt="маркер">Встроенная
                                 память: <b>128 ГБ</b>
                             </div>
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png"
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png"
                                     alt="маркер">Процессор:<a class="colorlink"
                                     href="https://ru.wikipedia.org/wiki/Apple_A15"><b>Apple A15 Bionic</b></a></div>
-                            <div class="row"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Вес:
+                            <div class="row-list"><img class="row__circle" src="./images/Маркер.png" alt="маркер">Вес:
                                 <b>173 г</b>
                             </div>
                         </div>
@@ -147,9 +148,9 @@
                         </div>
                     </div>
 
-                    <div class="block">
-                        <div class="block__header">Сравнение моделей</div>
-                        <table class="block__table">
+                    <div class="block-table">
+                        <div class="block-table__header">Сравнение моделей</div>
+                        <table class="block-table__table">
                             <tr class="table-compare">
                                 <th class="table-compare__head">Модель</th>
                                 <th class="table-compare__head">Вес</th>
@@ -247,8 +248,8 @@
                                 <div class="review__rightcol">
                                     <div class="review__name">
                                         Валерий Коваленко
-                                        <div class="review__stars"><img src="./images/Звезда.png"
-                                                alt="звездочка_золотая">
+                                        <div class="review__stars">
+                                            <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
                                             <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
                                             <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
                                             <img class="star" src="./images/Звезда.png" alt="звездочка_золотая">
@@ -272,12 +273,12 @@
                                     <fieldset class="fieldset-review">
                                         <div class="fieldset-review__field">
                                             <input class="input-review__name" type="text" name="name"
-                                                placeholder="Имя и фамилия" >
+                                                placeholder="Имя и фамилия">
                                             <input class="input-review__rating" type="number" name="rating"
                                                 placeholder="Оценка" min="0" max="5" step="1">
                                         </div>
-                                            <textarea class="textarea-review" name="review"
-                                                placeholder="Текст отзыва"></textarea>
+                                        <textarea class="textarea-review" name="review"
+                                            placeholder="Текст отзыва"></textarea>
                                     </fieldset>
                                 </form>
                                 <button class="reviews__button"><b>Добавить отзыв</b></button>
@@ -286,7 +287,6 @@
                     </div>
                 </div>
 
-                <!-- Сайдбар -->
                 <div class="content__sidebar">
 
                     <div class="important">
@@ -306,8 +306,8 @@
 
                     <div class="blurb">Реклама
                         <div class="blurb__list">
-                            <iframe class="blurb__frame" src="./ads.html" width="420" height="300"></iframe>
-                            <iframe class="blurb__frame" src="./ads.html" width="420" height="300"></iframe>
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
                         </div>
                     </div>
                 </div>
@@ -316,15 +316,17 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__left">
-            <b>© ООО «<span class="logo__colortext">Мой</span>Маркет», 2018-2022.</b>
-            <span>Для уточнения информации звоните по номеру <a class="colorlink" href="tel:7900000000">+7 900 000
-                    0000</a>,</span>
-            <span>а предложения по сотрудничеству отправляйте на почту <a class="colorlink"
-                    href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
-        </div>
-        <div class="footer__right">
-            <br><a class="colorlink" href="#header">Наверх</a>
+        <div class="footer__block">
+            <div class="footer__left">
+                <b>© ООО «<span class="logo__colortext">Мой</span>Маркет», 2018-2022.</b>
+                <span>Для уточнения информации звоните по номеру <a class="colorlink" href="tel:7900000000">+7 900 000
+                        0000</a>,</span>
+                <span>а предложения по сотрудничеству отправляйте на почту <a class="colorlink"
+                        href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
+            </div>
+            <div class="footer__right">
+                <br><a class="colorlink" href="#header">Наверх</a>
+            </div>
         </div>
     </footer>
 </body>
