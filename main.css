@@ -25,6 +25,7 @@ main {
     justify-content: space-between;
     height: 80px;
     background: #F8FAFE;
+    z-index: 1;
 }
 
 .hat__logo {
@@ -34,34 +35,42 @@ main {
     height: 80px;
 }
 
-.logo-image {
+.hat__logo-image {
     height: 43px;
 }
 
-.logo-text {
+.hat__logo-text {
     display: flex;
     flex-direction: row;
     font-weight: 700;
     font-size: 44px;
 }
 
-.logo-colortext {
+.hat__logo-colortext {
     color: #FF5722;
 }
 
 .hat__basket {
-    display: inline-block;
     position: relative;
     display: flex;
     align-items: center;
+    margin-right: 25px;
 }
 
 .hat__counter {
     position: absolute;
-    top: -5px;
-    right: -5px;
-    border-radius: 100%;
-    border: 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    width: 14px;
+    top: 15px;
+    right: -13px;
+    border-radius: 10px;
+    border: 1px solid #081658;
+    font-weight: 700;
+    font-size: 10px;
 }
 
 .breadcrumbs {
@@ -670,11 +679,11 @@ input::placeholder {
     color: #008CF0;
 }
 
-@media (max-width: 1499px) {    
+@media (max-width: 1499px) {
     .hat {
         width: 1000px;
     }
-    
+
     .page {
         width: 1000px;
     }
