@@ -55,6 +55,10 @@ body {
     color: #F36223;
 }
 
+.breadcrumbs__colorlink:focus {
+    color: #A93A09;
+}
+
 .phone {
     display: flex;
     flex-direction: column;
@@ -135,6 +139,10 @@ body {
 }
 
 .button-img:focus {
+    border: 2px solid #A93A09;
+}
+
+.button-img:active {
     border: 2px solid #F36223;
 }
 
@@ -160,6 +168,12 @@ body {
 }
 
 .button-row:focus {
+    border: 2px solid #A93A09;
+    height: 37px;
+    width: 92px;
+}
+
+.button-row:active {
     border: 2px solid #F36223;
     height: 37px;
     width: 92px;
@@ -361,7 +375,8 @@ body {
 
 .input-review__name {
     height: 48px;
-    width: 495px;;
+    width: 495px;
+    ;
     padding: 0 20px;
     border: 1px solid #888888;
     outline: none;
@@ -465,6 +480,37 @@ input::placeholder {
     gap: 10px;
 }
 
+.important__different {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 380px;
+}
+
+.hard {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    background: url(./images/сердечко.svg);
+    background-size: contain;
+    background-position: center;
+    border: none;
+}
+
+.hard:hover {
+    background: url(./images/сердечко-красное.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hard:focus {
+    background: url(./images/сердечко-темно-красное.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .oldprise {
     display: flex;
     flex-direction: row;
@@ -518,6 +564,16 @@ input::placeholder {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    gap: 15px;
+}
+
+.important__basket-button::before {
+    height: 24px;
+    width: 24px;
+    background-image: url(./images/корзина.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .important__basket-button:hover {
@@ -526,6 +582,7 @@ input::placeholder {
 
 .important__basket-button:focus {
     padding: 19px 49px;
+    background: #A93A09;
 }
 
 .blurb {
@@ -601,7 +658,7 @@ input::placeholder {
     .review__photo {
         height: 100px;
     }
-    
+
     .star {
         height: 20px;
     }
@@ -613,7 +670,7 @@ input::placeholder {
     .input-review__name {
         width: 337px;
     }
-          
+
     .important__basket-button {
         width: 320px;
     }
@@ -628,4 +685,9 @@ input::placeholder {
 
     .footer__block {
         width: 1000px;
+    }
+
+    .important__different {
+        width: 320px;
+    }
 }
