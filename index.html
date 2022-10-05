@@ -12,9 +12,15 @@
 <body>
     <header class="page">
         <div class="page__section">
-            <div class="logo">
-                <img class="logo__image" src="./images/favicon.ico" alt="Логотип">
-                <div class="logo__text"><span class="logo__colortext">Мой</span>Маркет</div>
+            <div class="hat">
+                <div class="hat__logo">
+                    <img class="logo-image" src="./images/favicon.ico" alt="Логотип">
+                    <div class="logo-text"><span class="logo-colortext">Мой</span>Маркет</div>
+                </div>
+                <div class="hat__basket"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.7394 8.87503C31.6476 8.74476 31.526 8.63844 31.3846 8.56501C31.2432 8.49158 31.0862 8.4532 30.9269 8.45309H9.70393L8.09743 2.91309C7.46743 0.731594 5.9704 0.496094 5.3564 0.496094H1.0729C0.523865 0.496094 0.0798645 0.940594 0.0798645 1.48909C0.0798645 2.03759 0.524365 2.48206 1.07286 2.48206H5.35586C5.49136 2.48206 5.90486 2.48206 6.1869 3.45656L11.7134 23.7671C11.8334 24.1956 12.2239 24.4915 12.6694 24.4915H26.1684C26.5874 24.4915 26.9614 24.229 27.1029 23.8345L31.8609 9.78203C31.9704 9.47753 31.9249 9.13853 31.7394 8.87503H31.7394ZM25.4696 22.5061H13.4231L10.2621 10.4396H29.5151L25.4696 22.5061ZM23.5001 26.5041C22.1191 26.5041 21.0001 27.6231 21.0001 29.0041C21.0001 30.3851 22.1191 31.5041 23.5001 31.5041C24.8811 31.5041 26.0001 30.3851 26.0001 29.0041C26.0001 27.6231 24.8811 26.5041 23.5001 26.5041ZM14.5001 26.5041C13.1191 26.5041 12.0001 27.6231 12.0001 29.0041C12.0001 30.3851 13.1191 31.5041 14.5001 31.5041C15.8811 31.5041 17.0001 30.3851 17.0001 29.0041C17.0001 27.6231 15.8811 26.5041 14.5001 26.5041Z" fill="#081658"/>
+                    </svg></div>
+                    <div class="hat__counter">3</div>
             </div>
         </div>
     </header>
@@ -296,7 +302,13 @@
                                     <div class="oldprise__price">75 990₽</div>
                                     <div class="oldprise__discount">-8%</div>
                                 </div>
-                                <button class="hard"></button>
+                                <input type="checkbox" id="checkbox" /><svg width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.299683 0.839233H3.80233H4.62213L4.78291 1.61096L5.24024 3.80618H18.8431H20.0235L19.8295 4.924L18.7993 10.8579L18.66 11.66H17.8129H6.87647L7.30062 13.696H17.8129V15.616H6.48081H5.66101L5.50023 14.8443L3.43985 4.95445L4.42044 4.76618L3.43985 4.95445L2.98252 2.75923H0.299683V0.839233ZM5.64024 5.72618L6.47647 9.74005H16.9658L17.6626 5.72618H5.64024ZM9.1758 18.0054C9.1758 18.8889 8.4316 19.6034 7.51119 19.6034C6.59075 19.6034 5.84656 18.8889 5.84656 18.0054C5.84656 17.1218 6.59075 16.4261 7.51119 16.4261C8.4316 16.4261 9.1758 17.1218 9.1758 18.0054ZM15.7534 19.6034C16.6738 19.6034 17.418 18.8889 17.418 18.0054C17.418 17.1218 16.6738 16.4261 15.7534 16.4261C14.8329 16.4261 14.0887 17.1218 14.0887 18.0054C14.0887 18.8889 14.8329 19.6034 15.7534 19.6034Z"
+                                        fill="white" />
+                                </svg>
+                                <button class="heart"></button>
                             </div>
                             <div class="newprise"> 67 990₽</div>
                             <div class="important__delivery">
@@ -307,15 +319,15 @@
                         </div>
                     </div>
 
-                        <div class="blurb">Реклама
-                            <div class="blurb__list">
-                                <iframe class="blurb__frame" src="./ads.html"></iframe>
-                                <iframe class="blurb__frame" src="./ads.html"></iframe>
-                            </div>
+                    <div class="blurb">Реклама
+                        <div class="blurb__list">
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
 
     <footer class="footer">

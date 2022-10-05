@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+main {
+    position: relative;
+    top: 80px;
+}
+
 .page {
     width: 1440px;
     margin: 0 auto;
@@ -12,27 +17,51 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-    margin: 0 auto;
+.hat {
+    position: fixed;
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    background: #F8FAFE;
+}
+
+.hat__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 80px;
 }
 
-.logo__image {
+.logo-image {
     height: 43px;
 }
 
-.logo__text {
+.logo-text {
     display: flex;
     flex-direction: row;
     font-weight: 700;
     font-size: 44px;
 }
 
-.logo__colortext {
+.logo-colortext {
     color: #FF5722;
+}
+
+.hat__basket {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hat__counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 100%;
+    border: 1px black;
 }
 
 .breadcrumbs {
@@ -487,7 +516,7 @@ input::placeholder {
     width: 380px;
 }
 
-.hard {
+.heart {
     height: 30px;
     width: 30px;
     margin-left: auto;
@@ -497,14 +526,21 @@ input::placeholder {
     border: none;
 }
 
-.hard:hover {
+.heart:hover {
     background: url(./images/сердечко-красное.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.hard:focus {
+.heart:focus {
+    background: url(./images/сердечко-темно-красное.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heart:active {
     background: url(./images/сердечко-темно-красное.svg);
     background-size: contain;
     background-position: center;
@@ -568,12 +604,8 @@ input::placeholder {
 }
 
 .important__basket-button::before {
-    height: 24px;
-    width: 24px;
-    background-image: url(./images/корзина.svg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+    content: url(./images/корзина.svg);
+    padding-top: 5px;
 }
 
 .important__basket-button:hover {
@@ -638,7 +670,11 @@ input::placeholder {
     color: #008CF0;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1499px) {    
+    .hat {
+        width: 1000px;
+    }
+    
     .page {
         width: 1000px;
     }
