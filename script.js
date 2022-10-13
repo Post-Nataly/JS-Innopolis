@@ -1,2 +1,2 @@
-"use script";
+"use strict";
 alert("Hello, Frontenders!");
