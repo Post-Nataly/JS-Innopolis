@@ -12,9 +12,29 @@
 <body>
     <header class="page">
         <div class="page__section">
-            <div class="logo">
-                <img class="logo__image" src="./images/favicon.ico" alt="Логотип">
-                <div class="logo__text"><span class="logo__colortext">Мой</span>Маркет</div>
+            <div class="hat">
+                <div class="hat__logo">
+                    <img class="hat__logo-image" src="./images/favicon.ico" alt="Логотип">
+                    <div class="hat__logo-text"><span class="hat__logo-colortext">Мой</span>Маркет</div>
+                </div>
+                <div class="hat__counters">
+                    <div class="hat__counter-icons"><svg width="44" height="35" viewBox="0 0 44 35" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.30841 2.95447C7.29791 -0.875449 13.7444 -0.875449 17.7339 2.95447L22.0002 7.05027L26.2667 2.95447C30.2563 -0.875449 36.7027 -0.875449 40.6923 2.95447C44.6817 6.78439 44.6817 12.973 40.6923 16.803L22.0002 34.7472L3.30841 16.803C-0.681091 12.973 -0.681091 6.78439 3.30841 2.95447ZM14.7876 5.78289C12.4253 3.51507 8.61701 3.51507 6.25468 5.78289C3.89237 8.05071 3.89237 11.7067 6.25468 13.9746L22.0002 29.0904L37.7461 13.9746C40.1084 11.7067 40.1084 8.05071 37.7461 5.78289C35.3838 3.51507 31.5755 3.51507 29.2132 5.78289L22.0002 12.7072L14.7876 5.78289Z"
+                                fill="#888888" />
+                        </svg>
+                        <div class="hat__counter-number">12</div>
+                    </div>
+                    <div class="hat__counter-icons"><svg width="42" height="41" viewBox="0 0 42 41" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.791016 0.915039H8.0882H9.79612L10.1311 2.5228L11.0838 7.09618H39.4231H41.8823L41.4781 9.42498L39.3319 21.7872L39.0417 23.4584H37.2769H14.4927L15.3763 27.7H37.2769V31.7H13.6684H11.9605L11.6255 30.0922L7.33304 9.4884L9.37593 9.09618L7.33304 9.4884L6.38027 4.91504H0.791016V0.915039ZM11.9172 11.0962L13.6593 19.4584H35.5121L36.9638 11.0962H11.9172ZM19.2829 36.6778C19.2829 38.5186 17.7325 40.007 15.815 40.007C13.8974 40.007 12.347 38.5186 12.347 36.6778C12.347 34.837 13.8974 33.3876 15.815 33.3876C17.7325 33.3876 19.2829 34.837 19.2829 36.6778ZM32.9863 40.007C34.9038 40.007 36.4542 38.5186 36.4542 36.6778C36.4542 34.837 34.9038 33.3876 32.9863 33.3876C31.0686 33.3876 29.5181 34.837 29.5181 36.6778C29.5181 38.5186 31.0686 40.007 32.9863 40.007Z"
+                                fill="#888888" />
+                        </svg>
+                        <div class="hat__counter-number">3</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -296,7 +316,12 @@
                                     <div class="oldprise__price">75 990₽</div>
                                     <div class="oldprise__discount">-8%</div>
                                 </div>
-                                <button class="hard"></button>
+                                <form class="like">
+                                    <label class="like__label">
+                                        <input class="like__heart" type="checkbox" name="like">
+                                        <div class="like__heart-image"></div>
+                                    </label>
+                                </form>
                             </div>
                             <div class="newprise"> 67 990₽</div>
                             <div class="important__delivery">
@@ -307,15 +332,15 @@
                         </div>
                     </div>
 
-                        <div class="blurb">Реклама
-                            <div class="blurb__list">
-                                <iframe class="blurb__frame" src="./ads.html"></iframe>
-                                <iframe class="blurb__frame" src="./ads.html"></iframe>
-                            </div>
+                    <div class="blurb">Реклама
+                        <div class="blurb__list">
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
+                            <iframe class="blurb__frame" src="./ads.html"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
 
     <footer class="footer">
