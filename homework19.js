@@ -19,7 +19,7 @@ console.log(message[0].toUpperCase() + message.slice(1));
 
 
 
-3
+// 3
 
 let age = prompt("Сколько Вам лет?");
 
@@ -47,7 +47,7 @@ else {
 
 
 
-4
+// 4
 
 let messsage = 'Я работаю со строками как профессионал!';
 
