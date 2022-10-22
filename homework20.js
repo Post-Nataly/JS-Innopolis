@@ -95,3 +95,16 @@ for (let index = 0; index < 12; index++) {
     if (index = 11) console.log("Ноябрь");
     if (index = 12) console.log("Декабрь");
 }
+
+
+
+// 4
+
+// IIFE (Immediately Invoked Function Expression) это JavaScript функция, 
+// которая выполняется сразу же после того, как она была определена.
+// Например:
+// (function IIFE(msg, times) {
+//     for (var i = 1; i <= times; i++) {
+//         console.log(msg);
+//     }
+// }("Hello!", 5));
