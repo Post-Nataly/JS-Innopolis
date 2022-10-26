@@ -22,17 +22,22 @@ alert(isEmpty(user));
 // 3
 
 /**увеличивает зарплату на определенный процент
+ * и выводит в консоль общий бюджет зп
  * @param {number} perzent - процент, на который увеличивается зарплата
  * @param {number} allowance - сумма начисления
  * @param {number} salaries - размер зарплаты
+ * @param {number} newsalaries - размер увеличенной зп
+ * @param {number} summ - общий бюджет зп после увеличения
  */
 
 function raiseSalary(perzent, salaries) {
+    let summ = 0;
     for (let key in salaries) {
         let allowance = salaries[key] * perzent / 100;
         let newsalaries = salaries[key] + allowance;
-        console.log(Math.floor(newsalaries));
+        summ += newsalaries;
     }
+    console.log(summ);
 }
 
 let salaries = {
