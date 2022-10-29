@@ -21,3 +21,8 @@ alert(getSumm(arr1));
 
 
 // 3
+
+let cart = [4884];
+cart.push(3456);
+console.log(cart);
+
