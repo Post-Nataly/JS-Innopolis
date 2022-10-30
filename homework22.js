@@ -37,19 +37,17 @@ function addToCart(arr) {
     return newarr;
 }
 
-cart.push(5525);
+cart.push(3456);
 
-cart.push(3446);
-
-cart.push(5525);
+cart.push(3456);
 
 console.log(addToCart(cart));
 
-function removeFromCart(arr) {
-    let newarr = [];
+function removeFromCart(arr, value) {
+    let newarr= [];
     for (let index = 0; index < arr.length; index++) {
-        if (newarr.includes(arr[index])) {
-            delete arr[index];
+        if (arr[index] !== value && !newarr.includes(arr[index])) {
+            newarr.push(arr[index]);
         } else {
             continue;
         }
@@ -57,6 +55,4 @@ function removeFromCart(arr) {
     return newarr;
 }
 
-cart.delete(5525);
-
-console.log(removeFromCart(cart));
+console.log(removeFromCart(cart, 4884));
