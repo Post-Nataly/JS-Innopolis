@@ -16,3 +16,21 @@ let interval = setInterval(() => {
         clearInterval(interval);
     }
 }, 1000);
+
+
+
+// 2
+
+let promise = fetch("https://reqres.in/api/users");
+
+promise
+    .then((response) => {
+        return response.json();
+    })
+
+    .then((response) => {
+        console.log(`Получили пользователей: ${response.data.length}`);
+        response.data.forEach(function (user) {
+            console.log(`- ${user.first_name} ${user.last_name} (${user.email})`);
+        })
+    })
